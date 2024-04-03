@@ -1,0 +1,49 @@
+[
+    {
+    "tracking_id": "TRK123456789",
+    "package_id": "PKG987654321",
+    "status": "In Transit",
+    "location": "Distribution Center A",
+    "estimated_delivery": "2021-09-30",
+    "last_updated": "2021-09-25T10:00:00",
+    "create_date": "2021-09-25T10:00:00",
+    "carrier": {
+      "name": "ABC Logistics",
+      "contact": "123-456-7890"
+    },
+    "sender": {
+      "name": "Sender Company",
+      "address": "123 Main Street, City, Country",
+      "contact": "sender@example.com"
+    },
+    "recipient": {
+      "name": "Recipient Name",
+      "address": "456 Elm Street, City, Country",
+      "contact": "recipient@example.com"
+    },
+    "tracking_events": [
+      {
+        "event_id": "EVT001",
+        "event_timestamp": "2021-09-20T08:30:00",
+        "event_description": "Package received at Distribution Center A",
+        "event_location": "Distribution Center A",
+        "event_status": "Received"
+      },
+      {
+        "event_id": "EVT002",
+        "event_timestamp": "2021-09-22T14:45:00",
+        "event_description": "Departed from Distribution Center A",
+        "event_location": "En route to Destination",
+        "event_status": "In Transit"
+      },
+      {
+        "event_id": "EVT003",
+        "event_timestamp": "2021-09-25T10:00:00",
+        "event_description": "Arrived at Local Distribution Center",
+        "event_location": "Local Distribution Center",
+        "event_status": "In Transit"
+      }
+    ]
+  }
+
+]

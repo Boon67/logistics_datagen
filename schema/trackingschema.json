@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "properties": {
+    "tracking_id": { "type": "string" },
+    "package_id": { "type": "string" },
+    "status": { "type": "string" },
+    "location": { "type": "string" },
+    "estimated_delivery": { "type": "string" },
+    "last_updated": { "type": "string" },
+    "carrier": { 
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "contact": { "type": "string" }
+      }
+    },
+    "sender": { 
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "address": { "type": "string" },
+        "contact": { "type": "string" }
+      }
+    },
+    "recipient": { 
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "address": { "type": "string" },
+        "contact": { "type": "string" }
+      }
+    },
+    "tracking_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "event_id": { "type": "string" },
+          "event_timestamp": { "type": "string" },
+          "event_description": { "type": "string" },
+          "event_location": { "type": "string" },
+          "event_status": { "type": "string" }
+        }
+      }
+    }
+  },
+  "required": ["tracking_id", "package_id", "status", "location", "carrier", "sender", "recipient", "tracking_events"]
+}
